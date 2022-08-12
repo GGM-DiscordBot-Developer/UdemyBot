@@ -34,7 +34,7 @@ const prefix = '!';
 
 client.once('ready', () => {
     console.log('접속 성공');
-    client.user.setActivity('!명령어', { tpye: 'PLAYING' });
+    client.user.setActivity('!명령어', { type : 'PLAYING' });
     if (lectureFile[0] != null) {
         JSON.parse(lectureFile).forEach(element => {
             lectureE.addFields(element);
